@@ -11,17 +11,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  /* font-size: calc(14px * var(--scale-factor)); */
+}
+
+body{
+  margin: 0;
+
 }
 
 :root {
-  --base-font-size: 16px;
+  /* --base-font-size: 16px; */
   --scale-factor: 1;
-  font-size: 14px;
+  /* font-size: calc(100vw / 100); */
+
+  font-size: 10px;
+
+  /* width: 1rem; */
 }
 
 @media screen and (max-width: 1024px) {
   :root {
-    /* --scale-factor: 0.875; 14px / 16px */
+    /* --scale-factor: 0.875;  */
     font-size: 12px;
 
   }
@@ -29,7 +41,7 @@
 
 @media screen and (min-width: 1920px) {
   :root {
-    /* --scale-factor: 1.125; 18px / 16px */
+    /* --scale-factor: 1.125;  */
     font-size: 18px;
 
   }
